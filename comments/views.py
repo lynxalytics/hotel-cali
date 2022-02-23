@@ -10,7 +10,6 @@ class CommentListView(generic.ListView):
     context_object_name = 'comments'
     paginate_by = 20
     ordering = ['-created_at']
-    template_name = "comments/comments_list.html"
 
 
 class CommentCreateView(mixins.LoginRequiredMixin, generic.CreateView):
